@@ -16,6 +16,7 @@ mkdir ~/.config
 mv ./fastfetch-cnf.jsonc ~/.config/fastfetch-cnf.jsonc
 
 echo "installatie terminal toepassingen..."
+sudo apt update
 wget https://github.com/fastfetch-cli/fastfetch/releases/latest/download/fastfetch-linux-amd64.deb
 sudo apt install ./fastfetch-linux-amd64.deb
 rm ./fastfetch-linux-amd64.deb
