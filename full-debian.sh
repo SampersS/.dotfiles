@@ -24,4 +24,4 @@ sudo apt install zsh vim
 echo "sh veranderen..."
 sudo chsh $USER --shell /bin/zsh
 
-rm installer.sh
+rm full-debian.sh
