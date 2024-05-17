@@ -6,7 +6,7 @@
         }
     },
     "display": {
-        "separator": "  "
+        "separator": ": "
     },
     "modules": [
         {
