@@ -22,4 +22,6 @@ alias cki='ping 1.1.1.1' #internet check
 alias ckd='ping google.com' #dns check
 alias e='exit'
 alias dc='sudo docker compose'
-alias sl='ls -al'
+alias ll='ls -al'
+alias cp='cp -i'
+alias cls='clear'
