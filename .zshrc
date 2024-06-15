@@ -11,8 +11,11 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-PS1='%F{11}%n%f@%m %F{10}%/%f%F{51}%#%f '
+PS1='%F{12}%n%f@%m %F{10}%/%f%F{51}%#%f '
 fastfetch --config ~/.config/fastfetch-cnf.jsonc
+
+source ~/.pcrc
+
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "^H" backward-kill-word
@@ -25,3 +28,4 @@ alias dc='sudo docker compose'
 alias ll='ls -al'
 alias cp='cp -i'
 alias cls='clear'
+alias pdtn='2>/dev/null'
