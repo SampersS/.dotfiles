@@ -14,6 +14,7 @@ mv ./.vimrc ~/.vimrc
 mv ./.inputrc ~/.inputrc
 mkdir ~/.config
 mv ./fastfetch-cnf.jsonc ~/.config/fastfetch-cnf.jsonc
+touch ~/.pcrc
 
 echo "installatie terminal toepassingen..."
 sudo apt update
