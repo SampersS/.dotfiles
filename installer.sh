@@ -9,4 +9,5 @@ mv ./.vimrc ~/.vimrc
 mv ./.inputrc ~/.inputrc
 mkdir ~/.config
 mv ./fastfetch-cnf.jsonc ~/.config/fastfetch-cnf.jsonc
+touch ~/.pcrc
 rm installer.sh
