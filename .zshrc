@@ -11,7 +11,7 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-PS1='%F{12}%n%f@%m %F{10}%/%f%F{51}%#%f '
+PS1='%m %F{10}%/%f%F{51}%#%f '
 fastfetch --config ~/.config/fastfetch-cnf.jsonc
 
 source ~/.pcrc
