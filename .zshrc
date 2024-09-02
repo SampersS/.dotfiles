@@ -11,7 +11,17 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-PS1='%m %F{10}%/%f%F{51}%#%f '
+
+WOORD=$(hostname)
+TOTAAL=0
+for i in $(seq 1 $(echo -n $WOORD | wc -m));
+do
+	LETTER=$(expr substr $WOORD $i 1)
+	TOTAAL=$(($TOTAAL+$(printf "%d\n" \'$LETTER\')))
+done
+KLEURID=$(($TOTAAL%15+1))
+PS1="%F{$KLEURID}%m%f %F{10}%/%f%F{51}%#%f "
+
 fastfetch --config ~/.config/fastfetch-cnf.jsonc
 
 source ~/.pcrc
