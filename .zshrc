@@ -28,7 +28,6 @@ fi
 
 PS1="%F{$KLEURID}%m%f %F{10}%/%f%F{51}%#%f "
 
-fastfetch --config ~/.config/fastfetch-cnf.jsonc
 
 source ~/.pcrc
 
@@ -43,5 +42,7 @@ alias e='exit'
 alias dc='sudo docker compose'
 alias ll='ls -al'
 alias cp='cp -i'
+alias ls='ls --color=tty'
 alias cls='clear'
 alias pdtn='2>/dev/null'
+alias fastfetch="fastfetch --config ~/.config/fastfetch-cnf.jsonc"
